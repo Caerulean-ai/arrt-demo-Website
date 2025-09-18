@@ -3,29 +3,6 @@ import { Button } from '../ui/button';
 import { Users, Target, Award, Lightbulb, ArrowRight } from 'lucide-react';
 
 export const AboutUs = () => {
-  const team = [
-    {
-      name: 'Sarah Chen',
-      role: 'CEO & Co-founder',
-      description: 'Former AI researcher at Google with 15+ years in machine learning and business strategy.'
-    },
-    {
-      name: 'Marcus Rodriguez',
-      role: 'CTO & Co-founder',
-      description: 'Ex-Tesla AI engineer specializing in computer vision and autonomous systems.'
-    },
-    {
-      name: 'Dr. Emily Watson',
-      role: 'Head of Research',
-      description: 'PhD in AI from MIT, published 50+ papers in top-tier machine learning conferences.'
-    },
-    {
-      name: 'James Kim',
-      role: 'VP of Engineering',
-      description: 'Previously led engineering teams at Microsoft and Amazon, expert in scalable AI systems.'
-    }
-  ];
-
   const values = [
     {
       icon: Target,
@@ -57,7 +34,7 @@ export const AboutUs = () => {
           <div className="text-center">
             <h1 className="text-5xl font-bold text-black mb-6">About ARRT</h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-              Founded in 2020, ARRT has rapidly become a leader in artificial intelligence solutions, 
+              Founded in 2024, ARRT has rapidly become a leader in artificial intelligence solutions, 
               helping businesses across industries harness the power of AI to drive innovation and growth.
             </p>
           </div>
@@ -71,27 +48,13 @@ export const AboutUs = () => {
             <div>
               <h2 className="text-4xl font-bold text-black mb-6">Our Mission</h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                To democratize artificial intelligence and make advanced AI solutions accessible to businesses 
-                of all sizes. We believe that AI should enhance human potential, not replace it.
+                Our mission is to use artificial intelligence to monitor human actions and provide real-time feedback to enhance safety and security. 
+                We believe AI should work alongside humans to create safer environments for everyone.
               </p>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                Since our founding, we've helped over 500 companies transform their operations with AI, 
-                processing over 10 billion data points and saving our clients millions of hours in manual work.
+                We leverage advanced AI security systems to keep people and their property safe through intelligent monitoring, real-time threat detection,
+                 and proactive response capabilities. Our solutions adapt to each environment's unique needs while maintaining the highest standards of privacy and security.
               </p>
-              <div className="grid grid-cols-3 gap-8">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-black mb-2" style={{ color: '#027AAB' }}>500+</div>
-                  <div className="text-gray-600">Companies Served</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-black mb-2" style={{ color: '#22C55E' }}>10B+</div>
-                  <div className="text-gray-600">Data Points Processed</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-black mb-2" style={{ color: '#F57251' }}>99.9%</div>
-                  <div className="text-gray-600">Uptime</div>
-                </div>
-              </div>
             </div>
             <div className="relative">
               <div className="bg-gradient-to-br from-blue-500 to-green-500 rounded-2xl p-8 text-white">
@@ -124,29 +87,6 @@ export const AboutUs = () => {
                 </div>
                 <h3 className="text-xl font-bold text-black mb-3">{value.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{value.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-black mb-4">Meet Our Team</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              World-class experts in AI, machine learning, and business strategy.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <div key={index} className="text-center">
-                <div className="w-32 h-32 rounded-full mx-auto mb-6 bg-gradient-to-br from-blue-500 to-green-500"></div>
-                <h3 className="text-xl font-bold text-black mb-2">{member.name}</h3>
-                <p className="text-green-600 mb-3" style={{ color: '#22C55E' }}>{member.role}</p>
-                <p className="text-gray-600 text-sm leading-relaxed">{member.description}</p>
               </div>
             ))}
           </div>

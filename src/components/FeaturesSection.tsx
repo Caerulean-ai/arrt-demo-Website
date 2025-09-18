@@ -1,5 +1,5 @@
 import React from 'react';
-import { Brain, Zap, Target, Shield, Globe, Cpu, HelpCircle, ArrowRight } from 'lucide-react';
+import { Brain, Zap, Target, Shield, Globe, Cpu, HelpCircle, ArrowRight, Activity } from 'lucide-react';
 import { ScrollAnimation, StaggerAnimation } from './ScrollAnimation';
 import { Button } from './ui/button';
 import { toast } from 'sonner';
@@ -11,37 +11,37 @@ interface FeaturesSectionProps {
 export const FeaturesSection: React.FC<FeaturesSectionProps> = ({ onNavigate }) => {
   const features = [
     {
+      icon: Activity,
+      title: 'Action Analysis',
+      description: 'Our unique AI technology analyzes human behavior and actions in real-time, providing unprecedented insights for safety and security.',
+      color: '#027AAB',
+      bgGradient: 'linear-gradient(135deg, #027AAB 0%, #22C55E 100%)'
+    },
+    {
       icon: Brain,
       title: 'Machine Learning',
       description: 'Advanced algorithms that learn and adapt to your business needs automatically.',
-      color: '#027AAB',
-      bgGradient: 'linear-gradient(135deg, #027AAB 0%, #22C55E 100%)'
+      color: '#22C55E',
+      bgGradient: 'linear-gradient(135deg, #22C55E 0%, #F57251 100%)'
     },
     {
       icon: Zap,
       title: 'Real-time Processing',
       description: 'Lightning-fast data processing and analysis for immediate insights.',
-      color: '#22C55E',
-      bgGradient: 'linear-gradient(135deg, #22C55E 0%, #F57251 100%)'
+      color: '#F57251',
+      bgGradient: 'linear-gradient(135deg, #F57251 0%, #027AAB 100%)'
     },
     {
       icon: Target,
       title: 'Precision Analytics',
       description: 'Accurate predictions and recommendations based on comprehensive data analysis.',
-      color: '#F57251',
-      bgGradient: 'linear-gradient(135deg, #F57251 0%, #027AAB 100%)'
+      color: '#027AAB',
+      bgGradient: 'linear-gradient(135deg, #027AAB 0%, #22C55E 100%)'
     },
     {
       icon: Shield,
       title: 'Secure & Reliable',
       description: 'Enterprise-grade security with 99.9% uptime guarantee.',
-      color: '#027AAB',
-      bgGradient: 'linear-gradient(135deg, #027AAB 0%, #22C55E 100%)'
-    },
-    {
-      icon: Globe,
-      title: 'Global Scale',
-      description: 'Scalable solutions that grow with your business worldwide.',
       color: '#22C55E',
       bgGradient: 'linear-gradient(135deg, #22C55E 0%, #F57251 100%)'
     },

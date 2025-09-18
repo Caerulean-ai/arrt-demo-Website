@@ -1,60 +1,57 @@
 import React from 'react';
 import { Button } from '../ui/button';
-import { Brain, Eye, MessageSquare, BarChart3, Shield, Zap, ArrowRight, CheckCircle } from 'lucide-react';
+import { Brain, Eye, MessageSquare, BarChart3, Shield, Zap, ArrowRight, CheckCircle, Users, Hotel, Store } from 'lucide-react';
 
 export const Services = () => {
   const services = [
     {
-      icon: Brain,
-      title: 'Machine Learning Solutions',
-      description: 'Custom ML models tailored to your business needs with continuous learning capabilities.',
-      features: ['Predictive Analytics', 'Recommendation Systems', 'Anomaly Detection', 'Custom Model Development'],
-      price: 'Starting at $5,000/month'
+      icon: Hotel,
+      title: 'AI Security for Hotels',
+      description: 'Comprehensive security solution for hotels including guest safety, property protection, and staff monitoring',
+      features: ['Guest Area Monitoring', 'Access Control Systems', 'Theft Prevention', '24/7 Real-time Alerts'],
+      price: 'Starting at $8,000/month'
     },
     {
       icon: Eye,
-      title: 'Computer Vision',
-      description: 'Advanced image and video analysis for quality control, security, and automation.',
-      features: ['Object Detection', 'Facial Recognition', 'Quality Inspection', 'Real-time Processing'],
-      price: 'Starting at $3,500/month'
+      title: 'AI Security for Supermarkets',
+      description: 'Advanced monitoring systems to prevent shoplifting, ensure staff compliance, and maintain store safety.',
+      features: ['Shoplifting Detection', 'Inventory Protection', 'Customer Flow Analysis', 'Employee Monitoring'],
+      price: 'Starting at $6,500/month'
     },
     {
-      icon: MessageSquare,
-      title: 'Natural Language Processing',
-      description: 'Understand and process human language for chatbots, sentiment analysis, and more.',
-      features: ['Chatbots & Virtual Assistants', 'Sentiment Analysis', 'Document Processing', 'Language Translation'],
-      price: 'Starting at $2,500/month'
+      icon: Users,
+      title: 'AI Security for Care Homes',
+      description: 'Specialized monitoring solutions to ensure resident safety, prevent incidents, and support caregiving staff.',
+      features: ['Fall Detection', 'Wandering Prevention', 'Emergency Response', 'Staff Compliance Monitoring'],
+      price: 'Starting at $7,500/month'
     },
     {
-      icon: BarChart3,
-      title: 'Business Intelligence',
-      description: 'Transform your data into actionable insights with AI-powered analytics.',
-      features: ['Real-time Dashboards', 'Predictive Forecasting', 'Data Visualization', 'Custom Reports'],
-      price: 'Starting at $4,000/month'
+      icon: Store,
+      title: 'AI Security for Restaurants',
+      description: 'Smart security systems tailored for restaurant environments, ensuring customer and staff safety.',
+      features: ['Kitchen Safety Monitoring', 'Customer Area Security', 'Cash Handling Surveillance', 'Health Compliance'],
+      price: 'Starting at $5,500/month'
     },
     {
       icon: Shield,
-      title: 'AI Security & Compliance',
-      description: 'Secure your AI systems and ensure compliance with industry regulations.',
-      features: ['Security Audits', 'Compliance Monitoring', 'Data Privacy Protection', 'Risk Assessment'],
+      title: 'AI Security for Retail Stores',
+      description: 'Intelligent security solutions for retail environments, protecting merchandise and ensuring store safety.',
+      features: ['Loss Prevention', 'Customer Behavior Analysis', 'Queue Management', 'Incident Detection'],
       price: 'Starting at $6,000/month'
     },
     {
       icon: Zap,
-      title: 'AI Integration & Consulting',
-      description: 'Expert guidance to integrate AI seamlessly into your existing systems.',
-      features: ['Strategy Development', 'System Integration', 'Team Training', 'Ongoing Support'],
-      price: 'Starting at $8,000/month'
+      title: 'Custom AI Security Solutions',
+      description: 'Tailored security systems designed specifically for your unique business environment and requirements.',
+      features: ['Custom System Design', 'Integration Services', 'Ongoing Support', 'Performance Optimization'],
+      price: 'Contact for pricing'
     }
   ];
 
   const industries = [
-    { name: 'Healthcare', description: 'Medical imaging, drug discovery, patient management' },
-    { name: 'Finance', description: 'Fraud detection, risk assessment, algorithmic trading' },
-    { name: 'Retail', description: 'Inventory optimization, customer analytics, personalization' },
-    { name: 'Manufacturing', description: 'Quality control, predictive maintenance, supply chain' },
-    { name: 'Transportation', description: 'Route optimization, autonomous systems, logistics' },
-    { name: 'Energy', description: 'Grid optimization, demand forecasting, sustainability' }
+    { name: 'Hospitality', description: 'Hotels, restaurants, and entertainment venues requiring comprehensive security monitoring and guest safety protocols.' },
+    { name: 'Healthcare', description: 'Care homes, hospitals, and medical facilities needing patient safety monitoring and compliance oversight.' },
+    { name: 'Corporations', description: 'Office buildings, retail stores, and business facilities requiring employee and asset protection systems.' }
   ];
 
   return (
@@ -65,8 +62,7 @@ export const Services = () => {
           <div className="text-center">
             <h1 className="text-5xl font-bold text-black mb-6">Our Services</h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-              Comprehensive AI solutions designed to transform your business operations, 
-              enhance decision-making, and drive sustainable growth.
+              Advanced AI security solutions designed to monitor human actions, provide real-time feedback, and keep people and property safe across diverse business environments.
             </p>
           </div>
         </div>
@@ -100,7 +96,7 @@ export const Services = () => {
                   <div className="text-2xl font-bold text-black mb-4" style={{ color: '#22C55E' }}>
                     {service.price}
                   </div>
-                  <Button className="w-full" style={{ backgroundColor: '#027AAB' }}>
+                  <Button className="w-full" style={{ backgroundColor: '#027AAB', color: '#fff' }}>
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -144,10 +140,10 @@ export const Services = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
-              { step: '01', title: 'Discovery', description: 'We analyze your business needs and identify AI opportunities.' },
-              { step: '02', title: 'Strategy', description: 'We develop a comprehensive AI strategy aligned with your goals.' },
-              { step: '03', title: 'Implementation', description: 'We build and deploy custom AI solutions for your business.' },
-              { step: '04', title: 'Optimization', description: 'We continuously monitor and improve your AI systems.' }
+              { step: '01', title: 'Analysis', description: 'We analyze your property and assess what security measures are needed for optimal protection.' },
+              { step: '02', title: 'Strategy', description: 'We determine what needs to be monitored - theft prevention, safety compliance, or other specific threats.' },
+              { step: '03', title: 'Implementation', description: 'We install and configure cameras, AI systems, and security infrastructure tailored to your needs.' },
+              { step: '04', title: 'Optimization', description: 'We continuously monitor performance and optimize the system for maximum effectiveness and efficiency.' }
             ].map((process, index) => (
               <div key={index} className="text-center">
                 <div className="w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold text-white mx-auto mb-6" style={{ backgroundColor: '#22C55E' }}>

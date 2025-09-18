@@ -16,7 +16,7 @@ export const CTASection: React.FC<CTASectionProps> = ({ onNavigate }) => {
   };
 
   const handleCopyPhone = () => {
-    navigator.clipboard.writeText('+1 (555) 123-4567');
+    navigator.clipboard.writeText('+1 (647) 679-2288');
     toast.success('Phone number copied to clipboard!');
   };
 
